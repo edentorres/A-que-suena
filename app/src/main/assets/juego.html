@@ -1,0 +1,93 @@
+<html>
+	<head>
+		
+		<script type="text/javascript" src="js/buzz.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<script type="text/javascript" src="js/main.js"></script>
+		<style type="text/css">
+			@font-face{
+                font-family: 'Fredoka One';
+                src: url('font.ttf');
+            }
+            body {
+                font-family: 'Fredoka One', 'Calibri', sans-serif;
+                margin: 1% 0% 0% 0%;
+            }
+			.hidden {
+				visibility: hidden;
+			}
+			h1{
+				font-size: 3.2vw;
+				//text-align: center;
+			}
+			p{
+				font-size: 2vw;
+			}
+			/*#texto{
+				background-color: #ff7373;
+            	border: 7px solid;
+            	border-color: #ea5959;
+            	border-radius: 20px;
+            	margin-left: 2%;
+            	margin-bottom: 1vh;
+
+			}*/
+		</style>
+	</head>
+	<body background="botones/fondo.jpg" style="width: 100%;">
+		<div class="container-fluid" id="hola">
+
+			<div class="row">
+				<div class="col-sm-8 col-md-8 col-xs-11 col-xs-offset-1 col-md-offset-0 col-sm-offset-0" id="texto">
+					<h1 id="txt">hola!!</h1>
+				</div>
+				<div class="col-sm-1 col-md-1 col-xs-3 col-xs-offset-0 col-md-offset-0 col-sm-offset-0">
+					<a href="index.html">
+						<img src="botones/inicio.png" id="menu" style="width: 9vw; margin-top:2vw; "/>
+					</a>
+				</div>
+				<div class="col-sm-1 col-md-1 col-xs-3 col-xs-offset-0 col-md-offset-0 col-sm-offset-0">
+					<img src="botones/ayuda.png" id="ayuda" style="width: 9vw; margin-top:2vw; margin-left:2.5vw;" onclick="sound()"/>
+				</div>
+				<div id="video" class="col-sm-1 col-md-1 col-xs-3 col-xs-offset-0 col-md-offset-0 col-sm-offset-0" >
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9 col-md-9 col-xs-12 ">
+					<p id="subtxt">lorem ipsum</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12 col-sm-4 fotos" id="pic1" >
+					FOTO
+				</div>
+				<div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-0 col-sm-offset-0 col-sm-4" id="sound" style='width:32%;'>
+					<img class="sound img-responsive" style=' height: 44vh;' src="botones/play.png"/>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-4 fotos" id="pic2" >
+					FOTO
+				</div>
+			</div>
+
+			<br />
+
+			<div class="row hidden">
+				<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-3 col-md-2 col-md-offset-3 hidden pasar" id="correcto" >
+					<button type="button" id="boton" class="btn btn-success" style=" height:10vh; width:30vw; font-size: 110%; margin: 0vw 6vw;">
+						Success
+					</button>
+				</div>
+				<div class="col-xs-8 col-xs-offset-3 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-3 hidden pasar" >
+					<img id="correcto" style=" height:12vh; width:11vw;" src="botones/siguiente.png">
+				</div>
+			</div>
+
+
+		</div>
+	</body>
+</html>

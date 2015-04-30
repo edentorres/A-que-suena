@@ -1,0 +1,78 @@
+<html>
+	<head>
+            <script src="intelxdk.js"></script>
+
+    <script>
+document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);               
+function onDeviceReady(){
+    // set orientation
+    intel.xdk.device.setRotateOrientation('landscape');
+//    intel.xdk.device.setRotateOrientation('portrait');
+//    intel.xdk.device.setRotateOrientation('any');
+
+    intel.xdk.device.hideSplashScreen();   
+}        
+    </script>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        
+        <style type="text/css">
+            @font-face{
+                font-family: 'Fredoka One';
+                src: url('font.ttf');
+            }
+            body {
+                font-family: 'Fredoka One', 'Calibri', sans-serif;
+            }
+            .hidden {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+        <body background="botones/fondo.jpg" style="width: 100%;">
+
+        <div class="row">
+            <div class="col-md-7 col-xs-7 col-sm-7 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+                <h1>&#191A qu&eacute suena?</h1>
+            </div>
+            <div class="col-md-1 col-xs-1 col-sm-1">
+                <a href="demo1.html?cual=0">
+                        <img src="botones/ayuda.png" id="ayuda" style="width: 9vw; margin-top:2vw;"/>
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-7 col-sm-7 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+                <h4>DISRIMINACI&OacuteN DE FONEMAS</h4>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-sm-5 col-xs-offset-1 col-xs-10">
+                <a href="juego.html?cual=0">
+                    <img src="botones/vrdconimagenes.png" style="width:100%;margin-top: 2%;margin-bottom: 2%;"  id="img1"/>
+                </a>
+            </div>
+            <div class="col-xs-offset-1 col-md-offset-0 col-sm-offset-0 col-md-5 col-xs-10 col-sm-5">
+                <a href="juego.html?cual=1">
+                    <img src="botones/vrgsino.png" style="width:100%;margin-top: 2%;margin-bottom: 2%;" id="img2"/>
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 col-sm-5 col-xs-offset-1 col-xs-10">
+                <a href="juego.html?cual=2">
+                    <img src="botones/urdconimagenes.png" style="width:100%;margin-top: 2%;margin-bottom: 2%;" id="img3"/>
+                </a>
+            </div>
+            <div class="col-xs-offset-1 col-md-offset-0 col-sm-offset-0 col-md-5 col-xs-10 col-sm-5">
+                <a href="juego.html?cual=3">
+                    <img src="botones/urgsiono.png" style="width:100%;margin-top: 2%;margin-bottom: 2%;" id="img4"/>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
